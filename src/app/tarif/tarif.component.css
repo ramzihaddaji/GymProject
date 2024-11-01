@@ -1,0 +1,82 @@
+/* Section de Tarifs */
+.tarif-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to left, #243642, #387478);
+    color: #ffffff;
+    text-align: center;
+}
+
+.tarif-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.tarif-card {
+    background-color: #314a5c;
+    border-radius: 8px;
+    padding: 30px 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.tarif-card:hover {
+    transform: scale(1.05);
+}
+
+.tarif-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #e0a458;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.benefits-list li {
+    font-size: 1rem;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.benefits-list li::before {
+    content: '✓';
+    color: #e0a458  ;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.subscribe-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #e0a458;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #e6880c;
+}

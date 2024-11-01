@@ -1,0 +1,122 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #243642;
+    color: #fff;
+}
+
+/* Section de la barre de navigation */
+.breadcrumb-section {
+
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.breadcrumb-text h2 {
+    font-size: 36px;
+    color: #e0a458;
+}
+
+.breadcrumb-text .bt-option a,
+.breadcrumb-text .bt-option span {
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.breadcrumb-text .bt-option a:hover {
+    color: #e0a458;
+}
+
+/* Section du calculateur d'IMC */
+.bmi-calculator-section {
+    padding: 60px 0;
+    background: linear-gradient(to left, #243642, #387478);
+    border-radius: 8px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-title span {
+    font-size: 20px;
+    color: #e0a458;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #314a5c;
+}
+
+/* Tableau de l'IMC */
+.chart-table table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #314a5c;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.chart-table th,
+.chart-table td {
+    padding: 15px;
+    border: 1px solid #cfd3d6;
+    text-align: center;
+}
+
+.chart-table th {
+    background-color: #314a5c;
+    font-size: 18px;
+}
+
+.chart-table .point {
+    color: #e0a458;
+}
+
+/* Formulaire de calcul de l'IMC */
+.chart-calculate-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #314a5c;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.chart-calculate-form p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.chart-calculate-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #243642;
+    border: 1px solid #314a5c;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.chart-calculate-form input[type="text"]::placeholder {
+    color: #b0c4de;
+}
+
+.chart-calculate-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e0a458;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chart-calculate-form button:hover {
+    background-color: #ff9100;
+}

@@ -1,0 +1,77 @@
+/* Section Cardio */
+.cardio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to left, #243642, #387478);
+    text-align: center;
+    animation: slideIn 2s ease-in-out;
+    margin-top: 20px;
+}
+
+.cardio-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.cardio-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #e0a458;
+    text-transform: uppercase;
+}
+
+.cardio-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.cardio-features {
+    list-style: none;
+    padding: 0;
+}
+
+.cardio-features li {
+    font-size: 1rem;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.cardio-features li::before {
+    content: '✓';
+    color: #e0a458;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.start-cardio-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #e0a458;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-cardio-btn:hover {
+    background-color: #e68608;
+}
+
+/* Animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,208 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html, body {
+    /* #243642
+    #387478
+    */
+    background: #243642;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  /* Light Rings Animations */
+  #lightings {
+    bottom: -60px;
+    position: absolute;
+    width: 100%;
+  }
+  
+  section {
+    border-radius: 50%;
+    height: 20px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  #one {
+    animation: one 5s ease-in-out infinite alternate;
+  }
+  @keyframes one {
+    from { box-shadow: 0 0 250px 20px #473C78; }
+    to { box-shadow: 0 0 100px 15px #387478; }
+  }
+  
+  #two {
+    width: 90%;
+    animation: two 4s ease-in-out infinite alternate;
+  }
+  @keyframes two {
+    from { box-shadow: 0 0 250px 20px #18C499; }
+    to { box-shadow: 0 0 100px 15px #D8F05E; }
+  }
+  
+  #three {
+    width: 80%;
+    animation: three 3s ease-in-out infinite alternate;
+  }
+  @keyframes three {
+    from { box-shadow: 0 0 250px 20px #FFDD00; }
+    to { box-shadow: 0 0 100px 15px #3E33FF; }
+  }
+  
+  #four {
+    width: 70%;
+    animation: four 2s ease-in-out infinite alternate;
+  }
+  @keyframes four {
+    from { box-shadow: 0 0 250px 20px #781848; }
+    to { box-shadow: 0 0 100px 15px #F2BBE9; }
+  }
+  
+  #five {
+    width: 60%;
+    animation: five 1s ease-in-out infinite alternate;
+  }
+  @keyframes five {
+    from { box-shadow: 0 0 250px 20px #42F2A1; }
+    to { box-shadow: 0 0 100px 15px #F4F6AD; }
+  }
+  
+  /* Footer Styles */
+  .ftco-footer {
+    background: #243642;
+    color: #999999;
+    padding: 3em 0; /* Reduced top padding */
+  }
+  
+  .ftco-footer-widget h2 {
+    color: #ffc107;
+    margin-bottom: 20px;
+  }
+  
+  .ftco-footer-widget ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .ftco-footer-widget a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .ftco-footer-widget a:hover {
+    color: #ffc107;
+  }
+  
+  .ftco-footer-social a {
+    margin-right: 10px;
+  }
+  
+  .block-23 ul {
+    padding: 0;
+  }
+  
+  .block-23 li {
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  /* Animations */
+  .ftco-animate {
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .ftco-footer-widget {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  
+
+  
+
+
+
+/* Conteneur principal */
+
+
+/* Section de contact */
+.ftco-footer {
+    background-color: #1e2e3a;
+    padding: 50px 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    border-top: 2px solid #fff;
+}
+
+.ftco-footer h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Liens sociaux */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.social-links a i {
+    margin-right: 8px;
+}
+
+/* Effets au survol */
+.social-links .facebook:hover {
+    color: #3b5998;
+}
+
+.social-links .youtube:hover {
+    color: #FF0000;
+}
+
+
+  

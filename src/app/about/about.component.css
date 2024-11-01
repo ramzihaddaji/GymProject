@@ -1,0 +1,116 @@
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Prend toute la hauteur de la vue */
+    padding: 20px 50px;
+    overflow: hidden;
+  }
+  
+  /* Section texte avec animation de glissement */
+  .text-section {
+    flex: 1;
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1.2s ease-out forwards;
+  }
+  
+  .text-section h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    animation: fadeInText 2s ease-in-out forwards;
+  }
+  
+  .text-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    animation: fadeInText 2.5s ease-in-out forwards;
+  }
+  
+  /* Section image avec animation fade-in */
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeInImage 1.5s ease-out forwards;
+  }
+  
+  .image-section img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+  }
+  
+  .image-section img:hover {
+    transform: scale(1.05); /* Agrandissement au survol */
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInImage {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+    }
+  
+    .image-section {
+      margin-top: 20px;
+    }
+  
+    .text-section h1 {
+      font-size: 36px;
+    }
+  
+    .text-section p {
+      font-size: 16px;
+    }
+  }
+  

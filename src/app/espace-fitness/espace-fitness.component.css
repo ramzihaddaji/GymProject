@@ -1,0 +1,85 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, #243642, #387478);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section Fitness */
+.fitness-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to left, #243642, #387478);
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.fitness-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.fitness-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #e0a458;
+    text-transform: uppercase;
+}
+
+.fitness-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.fitness-features {
+    list-style: none;
+    padding: 0;
+}
+
+.fitness-features li {
+    font-size: 1rem;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.fitness-features li::before {
+    content: '✓';
+    color: #e0a458;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.join-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #e0a458;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-btn:hover {
+    background-color: #d8943c;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

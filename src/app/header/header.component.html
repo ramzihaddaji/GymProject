@@ -1,0 +1,46 @@
+<header>
+    <ul class="navbar">
+        <li>
+            <img class="logo" src="assets/iron_logo-removebg-preview.png" alt="IronGym Logo">
+        </li>
+        <li><a class="aheader" [routerLink]="'/'">Accueil</a></li>
+        
+        <!-- Dropdown Nos Espaces -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle aheader" href="#" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                Nos espaces
+            </a>
+            <ul class="dropdown-content espaces">
+                <li><a class="dropdown-item" [routerLink]="'/musculation'">Espace de musculation</a></li>
+                <li><a class="dropdown-item" [routerLink]="'/espacefit'">Espace de fitness</a></li>
+                <li><a class="dropdown-item" [routerLink]="'/espacecardio'">Espace cardio training</a></li>
+            </ul>
+        </li>
+        
+        <!-- Dropdown Activités -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle aheader" href="#" id="navbarDropdownMenuLink2" role="button" aria-expanded="false">
+                Activités
+            </a>
+            <ul class="dropdown-content activites">
+                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/courcollect'">Les cours collectifs</a></li>
+                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/courenfant'">Club enfant</a></li>
+                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/coursadult'">Club adulte</a></li>
+            </ul>
+        </li>
+        
+        <li><a class="aheader" [routerLink]="'/tarif'">Tarifs</a></li>
+        <li><a class="aheader" [routerLink]="'/planning'">Planning</a></li>
+        <li><a class="aheader" [routerLink]="'/bmiclac'">Calculateur d'IMC</a></li>
+        <li><a class="aheader" [routerLink]="'/contact'">Contact</a></li>
+    </ul>
+
+    <div class="contentAbout">
+        <h1 class="h1About">BIENVENUE à Iron gym</h1> 
+        <h2 class="h2About">Salle de sport et de Fitness</h2>
+        <div class="btn">
+            <button class="btn1" [routerLink]="'/about'">À propos de nous</button>
+            <button class="btn2" [routerLink]="'/contact'">Contact</button>
+        </div>
+    </div>
+</header>

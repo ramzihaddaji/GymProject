@@ -1,0 +1,146 @@
+/* Base styles for navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #243642; /* Bleu avec 50% de transparence */
+/* Dark background */
+    padding-top: 5px;
+    padding-bottom: 3px;
+    list-style-type: none;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1000; 
+    border-bottom: solid #387478;
+}
+
+.aheader{
+    margin: 15px;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.logo {
+    width: 150px; /* Adjust logo size */
+    height: 50px;
+    margin-right: 100px; /* Space between logo and navbar content */
+}
+
+/* Navbar links styles */
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar li a:hover {
+    background-color: #387478; /* Green hover effect */
+    color: white;
+    border-radius: 5px;
+}
+
+/* Dropdown menu styles */
+.nav-item.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #243642; /* Dark background */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.adrop{
+    list-style-type: none;
+}
+
+.dropdown-content a {
+    color: white; /* White text */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #387478; /* Green hover effect */
+    color: white;
+}
+
+.nav-item.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Additional styles for specific sections */
+.espaces a:hover,
+.activites a:hover {
+    background-color: #ddd; /* Light grey hover effect */
+    color: black; /* Black text */
+}
+
+
+.contentAbout{
+
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    justify-content: center; /* Centre verticalement */
+    align-items: center;     /* Centre horizontalement */
+    height: 70vh;
+
+}
+
+.contentAbout > * {
+    margin: 10px 0; /* Ajoute un espace entre les éléments */
+}
+
+.h1About{
+    font-size: 50px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h2About{
+    font-size: 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn1{
+
+    color: white;
+    width: 150px;
+    height: 40px;
+    background-color: #387478;
+
+}
+
+.btn1:hover{
+    background-color: #243642;
+    width: 155px;
+    height: 45px;
+
+
+}
+
+.btn2:hover{
+    background-color: #243642;
+    width: 155px;
+    height: 45px;
+
+
+}
+
+.btn2{
+
+    color: white;
+    width: 150px;
+    height: 40px;
+    background-color: #387478;
+    margin-left: 50px;
+}
+

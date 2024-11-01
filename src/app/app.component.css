@@ -1,0 +1,12 @@
+/* Style personnalisé pour la balise hr */
+hr.custom-hr {
+    border: none;
+    height: 5px; /* Hauteur de la ligne */
+background-color: #4caf50;/* Dégradé de couleur */
+    margin: 30px 0; /* Espace autour de la ligne */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Ombre subtile pour effet de profondeur */
+
+}
+
+
+
