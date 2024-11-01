@@ -16,6 +16,7 @@ import { CoursAdulteComponent } from './cours-adulte/cours-adulte.component';
 import { TarifComponent } from './tarif/tarif.component';
 import { PlanningComponent } from './planning/planning.component';
 import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { BmiCalculatorComponent } from './bmi-calculator/bmi-calculator.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
