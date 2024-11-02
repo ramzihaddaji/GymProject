@@ -5,11 +5,11 @@ body {
     color: #fff;
 }
 
+
 /* Section de la barre de navigation */
 .breadcrumb-section {
 
     background-size: cover;
-    padding: 60px 0;
     text-align: center;
 }
 
@@ -31,7 +31,7 @@ body {
 
 /* Section du calculateur d'IMC */
 .bmi-calculator-section {
-    padding: 60px 0;
+
     background: linear-gradient(to left, #243642, #387478);
     border-radius: 8px;
 }

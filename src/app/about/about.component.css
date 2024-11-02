@@ -1,17 +1,13 @@
-/* Global reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100vh; /* Prend toute la hauteur de la vue */
+    height: 80%; /* Prend toute la hauteur de la vue */
+    width: 100%;
     padding: 20px 50px;
     overflow: hidden;
+
   }
   
   /* Section texte avec animation de glissement */
