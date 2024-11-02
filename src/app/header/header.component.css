@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #243642; /* Bleu avec 50% de transparence */
+    background-color: #172128; /* Bleu avec 50% de transparence */
 /* Dark background */
     padding-top: 5px;
     padding-bottom: 3px;
@@ -82,23 +82,43 @@
     background-color: #ddd; /* Light grey hover effect */
     color: black; /* Black text */
 }
-
 .contentAbout {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 55vh;
+    height: 85vh;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Fond sombre semi-transparent */
+    background-color: #232526;
+    background-image: url('/assets/ironlogo-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 100px;
+    background-size: 1500px 500px;
     border-radius: 10px;
+    position: relative; /* Permet de positionner correctement le pseudo-élément */
+    overflow: hidden;
 }
 
+/* Calque semi-transparent par-dessus l'image, sans affecter le texte */
+.contentAbout::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Calque transparent */
+    z-index: 1; /* Calque derrière le texte */
+}
 
+/* Styles pour le texte et les boutons dans .contentAbout */
 .contentAbout > * {
-    margin: 10px 0; /* Ajoute un espace entre les éléments */
+    position: relative;
+    z-index: 2; /* Place le texte au-dessus du calque transparent */
+    margin: 10px 0;
 }
-btn1
+
 .h1About {
     font-size: 50px;
     color: #ffffff;
@@ -114,6 +134,7 @@ btn1
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Ombre plus légère */
     margin: 5px 0;
 }
+
 .btn {
     display: flex;
     gap: 20px;

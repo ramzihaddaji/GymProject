@@ -1,12 +1,11 @@
 .container-musculation {
-    display: flex; /* Utiliser le flexbox pour aligner l'image et le texte */
-    justify-content: space-between; /* Espacer les éléments */
-    align-items: center; /* Alignement vertical centré */
-    max-width: 1200px; /* Largeur maximale du conteneur */
-    margin: auto; /* Centrer le conteneur sur la page */
-    padding: 20px; /* Espacement interne */
-    background: linear-gradient(to left, #243642, #387478); /* Couleur de fond du conteneur */
-    border-radius: 8px; /* Bords arrondis */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background: linear-gradient(to right, #172128 20%, #244547);
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .text-section {

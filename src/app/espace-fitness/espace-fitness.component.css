@@ -1,7 +1,7 @@
 /* Style global */
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to left, #243642, #387478);
+    background: linear-gradient(to right, #172128 20%, #244547);
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background: linear-gradient(to left, #243642, #387478);
+    background: linear-gradient(to right, #172128 20%, #244547);
     text-align: center;
     animation: fadeIn 2s ease-in-out;
 }

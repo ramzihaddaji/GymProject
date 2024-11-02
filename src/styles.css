@@ -9,7 +9,7 @@
 
 /* Fond de toute la page */
 body {
-    background: linear-gradient(to left, #243642, #387478);
+    background: linear-gradient(to right, #172128 20%, #244547);
     font-family: 'Arial', sans-serif;
     color: white;
     min-height: 100vh;

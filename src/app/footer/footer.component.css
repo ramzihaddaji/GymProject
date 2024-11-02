@@ -157,7 +157,8 @@
 
 /* Section de contact */
 .ftco-footer {
-    background-color: #1e2e3a;
+  background: linear-gradient(to right, #172128 20%, #244547);
+
     padding: 50px 20px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     border-top: 2px solid #fff;

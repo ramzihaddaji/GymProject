@@ -1,7 +1,8 @@
 /* Styles généraux */
 body {
     font-family: Arial, sans-serif;
-    background-color: #243642;
+    background: linear-gradient(to right, #172128 20%, #244547);
+
     color: #fff;
 }
 
@@ -32,7 +33,7 @@ body {
 /* Section du calculateur d'IMC */
 .bmi-calculator-section {
 
-    background: linear-gradient(to left, #243642, #387478);
+
     border-radius: 8px;
 }
 
@@ -48,7 +49,7 @@ body {
 
 .section-title h2 {
     font-size: 32px;
-    color: #314a5c;
+    
 }
 
 /* Tableau de l'IMC */
@@ -56,7 +57,7 @@ body {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
-    background-color: #314a5c;
+    background: linear-gradient(to right, #172128 20%, #244547);
     color: #fff;
     border-radius: 8px;
 }
@@ -69,7 +70,8 @@ body {
 }
 
 .chart-table th {
-    background-color: #314a5c;
+    background: linear-gradient(to left, #172128 20%, #244547);
+
     font-size: 18px;
 }
 
@@ -81,7 +83,7 @@ body {
 .chart-calculate-form {
     margin-top: 20px;
     padding: 20px;
-    background-color: #314a5c;
+    background: linear-gradient(to left, #172128 20%, #244547);
     border-radius: 8px;
     color: #ffffff;
 }
@@ -95,7 +97,7 @@ body {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    background-color: #243642;
+    background: linear-gradient(to right, #172128 20%, #244547);
     border: 1px solid #314a5c;
     color: #ffffff;
     border-radius: 4px;
