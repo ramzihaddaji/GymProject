@@ -1,11 +1,10 @@
 /* Style du formulaire */
 .contact-form {
     background: linear-gradient(to left, #172128 20%, #244547);
-
     padding: 20px;
     border-radius: 8px;
-    
-    width: 500px;
+    width: 100%; /* Prendre toute la largeur disponible */
+    max-width: 500px; /* Largeur maximale */
     margin: 0 auto;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     color: white;
@@ -56,4 +55,26 @@
 
 .contact-form .btn-submit:hover {
     background-color: #f08800;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px; /* Réduire le padding sur mobile */
+    }
+
+    .contact-form h1 {
+        font-size: 30px; /* Réduire la taille de police du titre */
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        font-size: 12px; /* Réduire la taille de police des champs */
+    }
+
+    .contact-form .btn-submit {
+        font-size: 14px; /* Réduire la taille de police du bouton */
+        padding: 8px 12px; /* Ajuster le padding du bouton */
+    }
 }

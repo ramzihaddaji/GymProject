@@ -1,77 +1,52 @@
 .container-musculation {
   display: flex;
+  flex-direction: column; /* Changer la direction pour les petits écrans */
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 20px; /* Réduire le padding pour les petits écrans */
   background: linear-gradient(to right, #172128 20%, #244547);
   text-align: center;
   animation: fadeIn 2s ease-in-out;
 }
 
 .text-section {
-    flex: 1; /* Permet à la section texte de prendre toute la largeur disponible */
-    color: white; /* Couleur du texte */
+  flex: 1; /* Permet à la section texte de prendre toute la largeur disponible */
+  color: white; /* Couleur du texte */
+  max-width: 970px; /* Limiter la largeur pour les écrans larges */
 }
+
+.gym-image {
+  width: 100%; /* Rendre l'image responsive */
+  max-width: 400px; /* Limiter la largeur de l'image */
+  height: auto; /* Hauteur automatique pour maintenir le ratio */
+  border-radius: 8px; /* Bords arrondis pour l'image */
+}
+
+/* Requêtes media pour les petits écrans */
+@media (max-width: 768px) {
+  .container-musculation {
+    flex-direction: column; /* Verticaliser la disposition sur petits écrans */
+  }
+  
   .text-section h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
-    animation: slideInFromLeft 1s ease-out forwards;
+    font-size: 30px; /* Réduire la taille de la police pour les petits écrans */
   }
   
   .text-section p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    opacity: 0;
-    animation: fadeInText 1.5s ease-in-out forwards;
+    font-size: 16px; /* Réduire la taille de la police pour les petits écrans */
   }
   
   .cta {
-    margin-top: 30px;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
+    font-size: 18px; /* Réduire la taille de la police pour le texte d'appel à l'action */
   }
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  
-  @keyframes slideInFromLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  
-  @keyframes fadeInText {
-    0% {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+}
 
-
-  .gym-image {
-    width: 400px; /* Largeur de l'image */
-    
-    height: auto; /* Hauteur automatique pour maintenir le ratio */
-    border-radius: 8px; /* Bords arrondis pour l'image */
+@media (max-width: 480px) {
+  .text-section h1 {
+    font-size: 24px; /* Réduire encore la taille de la police pour les très petits écrans */
+  }
+  
+  .text-section p {
+    font-size: 14px; /* Ajuster la taille de la police pour les très petits écrans */
+  }
 }

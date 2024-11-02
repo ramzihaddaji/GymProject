@@ -5,7 +5,6 @@
     align-items: center;
     padding: 50px;
     background: linear-gradient(to right, #172128 20%, #244547);
-
     color: #ffffff;
     text-align: center;
 }
@@ -15,15 +14,15 @@
     gap: 20px;
     max-width: 1000px;
     width: 100%;
-    justify-content: space-around;
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    justify-content: space-around; /* Distribue les cartes avec espace autour */
 }
 
 .tarif-card {
     background: linear-gradient(to left, #172128 20%, #244547);
-
     border-radius: 8px;
     padding: 30px 20px;
-    width: 300px;
+    width: 300px; /* Largeur par défaut */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
@@ -61,7 +60,7 @@
 
 .benefits-list li::before {
     content: '✓';
-    color: #e0a458  ;
+    color: #e0a458;
     position: absolute;
     left: 0;
     font-size: 1.2rem;
@@ -81,4 +80,35 @@
 
 .subscribe-btn:hover {
     background-color: #e6880c;
+}
+
+/* Requêtes media pour rendre la section responsive */
+@media (max-width: 768px) {
+    .tarif-container {
+        flex-direction: column; /* Verticaliser la disposition sur petits écrans */
+        align-items: center; /* Centrer les cartes */
+    }
+
+    .tarif-card {
+        width: 90%; /* Rendre la carte presque pleine largeur */
+        margin-bottom: 20px; /* Espacement entre les cartes */
+    }
+
+    .tarif-card h3 {
+        font-size: 1.5rem; /* Ajuster la taille de la police pour les petits écrans */
+    }
+
+    .price {
+        font-size: 1.5rem; /* Réduire la taille de la police pour le prix */
+    }
+}
+
+@media (max-width: 480px) {
+    .tarif-card h3 {
+        font-size: 1.2rem; /* Réduire la taille de la police pour les très petits écrans */
+    }
+
+    .price {
+        font-size: 1.2rem; /* Ajuster la taille de la police pour le prix sur les très petits écrans */
+    }
 }

@@ -206,4 +206,79 @@
 }
 
 
+
+/* Section de contact */
+.ftco-footer {
+  background: linear-gradient(to right, #172128 20%, #244547);
+  padding: 50px 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  border-top: 2px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre le contenu horizontalement */
+}
+
+.ftco-footer h1 {
+  margin-bottom: 30px;
+  font-size: 36px;
+  text-align: center; /* Centre le texte */
+}
+
+.contact-info {
+  text-align: center; /* Centre le texte pour les infos de contact */
+}
+
+.contact-info p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Liens sociaux */
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 20px;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.social-links a i {
+  margin-right: 8px;
+}
+
+/* Effets au survol */
+.social-links .facebook:hover {
+  color: #3b5998;
+}
+
+.social-links .youtube:hover {
+  color: #FF0000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ftco-footer h1 {
+      font-size: 28px; /* Réduit la taille du texte sur les petits écrans */
+  }
+
+  .contact-info p {
+      font-size: 16px; /* Réduit la taille de la police des infos de contact */
+  }
+
+  .social-links a {
+      margin: 0 10px; /* Réduit les marges entre les liens sociaux */
+      font-size: 18px; /* Réduit la taille de la police des liens sociaux */
+  }
+}
+
   
