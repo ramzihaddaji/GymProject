@@ -156,3 +156,38 @@
     background-color: #243642;
     transform: scale(1.1); /* Effet de zoom au survol */
 }
+
+
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #172128;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .navbar.active {
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px;
+        transition: 0.3s;
+    }
+}

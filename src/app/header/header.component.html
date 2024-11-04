@@ -1,9 +1,9 @@
 <header>
-    <ul class="navbar">
+    <ul class="navbar" [class.active]="isMenuOpen">
         <li>
             <img class="logo" src="assets/iron_logo-removebg-preview.png" alt="IronGym Logo">
         </li>
-        <li><a class="aheader" [routerLink]="'/'">Accueil</a></li>
+        <li><a class="aheader" [routerLink]="'/'" (click)="closeMenu()">Accueil</a></li>
         
         <!-- Dropdown Nos Espaces -->
         <li class="nav-item dropdown">
@@ -11,9 +11,9 @@
                 Nos espaces
             </a>
             <ul class="dropdown-content espaces">
-                <li><a class="dropdown-item" [routerLink]="'/musculation'">Espace de musculation</a></li>
-                <li><a class="dropdown-item" [routerLink]="'/espacefit'">Espace de fitness</a></li>
-                <li><a class="dropdown-item" [routerLink]="'/espacecardio'">Espace cardio training</a></li>
+                <li><a class="dropdown-item" [routerLink]="'/musculation'" (click)="closeMenu()">Espace de musculation</a></li>
+                <li><a class="dropdown-item" [routerLink]="'/espacefit'" (click)="closeMenu()">Espace de fitness</a></li>
+                <li><a class="dropdown-item" [routerLink]="'/espacecardio'" (click)="closeMenu()">Espace cardio training</a></li>
             </ul>
         </li>
         
@@ -23,17 +23,24 @@
                 Activités
             </a>
             <ul class="dropdown-content activites">
-                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/courcollect'">Les cours collectifs</a></li>
-                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/courenfant'">Club enfant</a></li>
-                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/coursadult'">Club adulte</a></li>
+                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/courcollect'" (click)="closeMenu()">Les cours collectifs</a></li>
+                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/courenfant'" (click)="closeMenu()">Club enfant</a></li>
+                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/coursadult'" (click)="closeMenu()">Club adulte</a></li>
             </ul>
         </li>
         
-        <li><a class="aheader" [routerLink]="'/tarif'">Tarifs</a></li>
-        <li><a class="aheader" [routerLink]="'/planning'">Planning</a></li>
-        <li><a class="aheader" [routerLink]="'/bmiclac'">Calculateur d'IMC</a></li>
-        <li><a class="aheader" [routerLink]="'/contact'">Contact</a></li>
+        <li><a class="aheader" [routerLink]="'/tarif'" (click)="closeMenu()">Tarifs</a></li>
+        <li><a class="aheader" [routerLink]="'/planning'" (click)="closeMenu()">Planning</a></li>
+        <li><a class="aheader" [routerLink]="'/bmiclac'" (click)="closeMenu()">Calculateur d'IMC</a></li>
+        <li><a class="aheader" [routerLink]="'/contact'" (click)="closeMenu()">Contact</a></li>
     </ul>
+
+ <!-- Toggle icon for mobile -->
+ <div class="menu-toggle" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
 
     <div class="contentAbout">
         <h1 class="h1About">BIENVENUE à Iron gym</h1> 
