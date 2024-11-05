@@ -2,7 +2,7 @@
 .cours-adulte-section {
     display: flex;
     justify-content: center;
-    align-items: center;
+
     padding: 50px;
     background: linear-gradient(to right, #172128 20%, #244547);
 
@@ -11,9 +11,34 @@
     margin-top: 20px;
 }
 
+/* Section image avec animation fade-in */
+.image-section {
+
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeInImage 1.5s ease-out forwards;
+  }
+  
+  .image-section img {
+    max-width: 87%;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+  }
+  
+  .image-section img:hover {
+    transform: scale(1.05); /* Agrandissement au survol */
+  }
+
 .cours-adulte-content {
-    max-width: 650px;
+    max-width: 800px;
     margin: auto;
+    margin-left: 40px;
 }
 
 .cours-adulte-content h2 {
