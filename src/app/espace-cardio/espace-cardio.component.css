@@ -8,7 +8,135 @@
     text-align: center;
     animation: slideIn 2s ease-in-out;
     margin-top: 20px;
+    flex-direction: row; /* Par défaut, en ligne */
 }
+
+/* Réglages pour les appareils mobiles */
+@media (max-width: 768px) {
+    .cardio-section {
+        flex-direction: column; /* Passe en colonne sur mobile */
+        padding: 20px;
+    }
+
+    .cardio-content {
+        margin: auto;
+        padding-left: 0; /* Enlever le padding à gauche sur mobile */
+        margin-bottom: 20px; /* Espace entre le contenu et l'image */
+    }
+
+    .image-section {
+        margin-top: 20px; /* Espace pour séparer l'image sur mobile */
+    }
+
+    .image-section img {
+        width: 100%; /* Adapter la largeur de l'image sur mobile */
+        height: auto; /* Ajuster la hauteur en fonction de la largeur */
+        border-radius: 20px;
+    }
+
+    .cardio-content h2 {
+        font-size: 2rem;
+    }
+
+    .cardio-content p {
+        font-size: 1rem;
+    }
+
+    .cardio-features li {
+        font-size: 0.95rem;
+    }
+}
+
+/* Section image avec animation fade-in */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeInImage 1.5s ease-out forwards;
+}
+
+.image-section img {
+    max-width: 60%;
+    height: 80%;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.image-section img:hover {
+    transform: scale(1.05); /* Agrandissement au survol */
+}
+
+.cardio-content {
+    max-width: 800px;
+    margin: auto;
+    margin-left: 40px;
+}
+
+.cardio-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #e0a458;
+    text-transform: uppercase;
+}
+
+.cardio-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.cardio-features {
+    list-style: none;
+    padding: 0;
+}
+
+.cardio-features li {
+    font-size: 1rem;
+    margin: 10px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.cardio-features li::before {
+    content: '✓';
+    color: #e0a458;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.start-cardio-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #e0a458;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-cardio-btn:hover {
+    background-color: #e68608;
+}
+
+/* Animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 
 
 
@@ -23,9 +151,12 @@
     transform: translateX(50px);
     animation: fadeInImage 1.5s ease-out forwards;
   }
+
+
+  
   
   .image-section img {
-    max-width: 85%;
+    max-width: 83%;
     height: 100%;
     border-radius: 50px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -104,3 +235,11 @@
         transform: translateX(0);
     }
 }
+
+
+
+
+
+
+
+

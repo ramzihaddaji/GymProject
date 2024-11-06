@@ -2,14 +2,68 @@
 .cours-enfant-section {
     display: flex;
     justify-content: center;
-
+    align-items: center;
     padding: 50px;
     background: linear-gradient(to right, #172128 20%, #244547);
-
     text-align: center;
     animation: fadeIn 2s ease-in-out;
     margin-top: 20px;
+    flex-direction: row; /* Par défaut, en ligne */
 }
+
+/* Réglages pour les appareils mobiles */
+@media (max-width: 768px) {
+    .cours-enfant-section {
+        flex-direction: column; /* Passe en colonne sur mobile */
+        padding: 20px;
+    }
+
+    .cours-enfant-content {
+        margin: auto;
+        padding-left: 0; /* Enlever le padding à gauche sur mobile */
+        margin-bottom: 20px; /* Espace entre le contenu et l'image */
+    }
+
+    .image-section {
+        margin-top: 20px; /* Espace pour séparer l'image sur mobile */
+    }
+
+    .image-section img {
+        width: 80%; /* Adapter la largeur de l'image sur mobile */
+        height: auto; /* Ajuster la hauteur en fonction de la largeur */
+        border-radius: 20px;
+    }
+
+    .cours-enfant-content h2 {
+        font-size: 2rem;
+    }
+
+    .cours-enfant-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Section image avec animation fade-in */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(50px);
+    animation: fadeInImage 1.5s ease-out forwards;
+}
+
+.image-section img {
+    width: 410px;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+}
+
+
 
 
 /* Section image avec animation fade-in */
@@ -23,15 +77,7 @@
     animation: fadeInImage 1.5s ease-out forwards;
   }
   
-  .image-section img {
-    width: 510px;
-    max-width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s ease;
-  }
-  
+
   .image-section img:hover {
     transform: scale(1.05); /* Agrandissement au survol */
   }
@@ -39,7 +85,7 @@
 .cours-enfant-content {
     max-width: 900px;
     margin: auto;
-    padding-left: 90px;
+   
 }
 
 .cours-enfant-content {
