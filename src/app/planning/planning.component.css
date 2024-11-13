@@ -59,6 +59,13 @@
 }
 
 
+hr.custom-hr {
+    border: none;
+    height: 5px;
+    background-color: #4caf50;
+    margin: 30px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
 
 
 .courses-table tr:nth-child(even) {

@@ -12,6 +12,7 @@ import { EspaceFitnessComponent } from './espace-fitness/espace-fitness.componen
 import { PlanningComponent } from './planning/planning.component';
 import { TarifComponent } from './tarif/tarif.component';
 import { AppComponent } from './app.component';
+import { OurTeamComponent } from './our-team/our-team.component';
 
 const routes: Routes = [
   {path:"musculation", component:EspaceMusculationComponent},
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path:"espacefit", component:EspaceFitnessComponent},
   {path:"planning", component:PlanningComponent},
   {path:"tarif", component:TarifComponent},
+  {path:"equipe", component:OurTeamComponent},
   {path:"*" , component: AppComponent}
 ];
 

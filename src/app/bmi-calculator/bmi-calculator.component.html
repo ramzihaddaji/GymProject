@@ -46,14 +46,18 @@
             <form (ngSubmit)="calculateBMI()">
               <div class="row">
                 <div class="col-sm-6">
-                  <input type="number" [(ngModel)]="bmi.height" name="height" placeholder="Taille / cm" required>
+                  <label for="height">Taille (cm)</label>
+                  <input type="number" [(ngModel)]="bmi.height" name="height" id="height" placeholder="Entrez votre taille" required>
                 </div>
                 <div class="col-sm-6">
-                  <input type="number" [(ngModel)]="bmi.weight" name="weight" placeholder="Poids / kg" required>
+                  <label for="weight">Poids (kg)</label>
+                  <input type="number" [(ngModel)]="bmi.weight" name="weight" id="weight" placeholder="Entrez votre poids" required>
                 </div>
                 <div class="col-sm-6">
-                  <input type="number" [(ngModel)]="bmi.age" name="age" placeholder="Âge" required>
+                  <label for="age">Âge</label>
+                  <input type="number" [(ngModel)]="bmi.age" name="age" id="age" placeholder="Entrez votre âge" required>
                 </div>
+                
                 
                 <div class="col-lg-12">
                   <button type="submit">Calculer</button>

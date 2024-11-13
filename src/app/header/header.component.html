@@ -3,44 +3,45 @@
         <li>
             <img class="logo" src="assets/iron_logo-removebg-preview.png" alt="IronGym Logo">
         </li>
-        <li><a class="aheader" [routerLink]="'/'" (click)="closeMenu()">Accueil</a></li>
+        <li><a class="aheader" [routerLink]="'/'" (click)="closeMenu()" target="_parent">Accueil</a></li>
         
         <!-- Dropdown Nos Espaces -->
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle aheader" href="#" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+            <a class="nav-link dropdown-toggle aheader" href="#" id="navbarDropdownMenuLink" role="button" aria-expanded="false" target="_parent">
                 Nos espaces
             </a>
             <ul class="dropdown-content espaces">
-                <li><a class="dropdown-item" [routerLink]="'/musculation'" (click)="closeMenu()">Espace de musculation</a></li>
-                <li><a class="dropdown-item" [routerLink]="'/espacefit'" (click)="closeMenu()">Espace de fitness</a></li>
-                <li><a class="dropdown-item" [routerLink]="'/espacecardio'" (click)="closeMenu()">Espace cardio training</a></li>
+                <li><a class="dropdown-item" [routerLink]="'/musculation'" (click)="closeMenu()" target="_parent" >Espace de musculation</a></li>
+                <li><a class="dropdown-item" [routerLink]="'/espacefit'" (click)="closeMenu()" target="_parent">Espace de fitness</a></li>
+                <li><a class="dropdown-item" [routerLink]="'/espacecardio'" (click)="closeMenu()" target="_parent">Espace cardio training</a></li>
             </ul>
         </li>
         
         <!-- Dropdown Activités -->
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle aheader" href="#" id="navbarDropdownMenuLink2" role="button" aria-expanded="false">
+            <a class="nav-link dropdown-toggle aheader" href="#" id="navbarDropdownMenuLink2" role="button" aria-expanded="false" target="_parent">
                 Activités
             </a>
             <ul class="dropdown-content activites">
-                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/courcollect'" (click)="closeMenu()">Les cours collectifs</a></li>
-                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/courenfant'" (click)="closeMenu()">Club enfant</a></li>
-                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/coursadult'" (click)="closeMenu()">Club adulte</a></li>
+                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/courcollect'" (click)="closeMenu()" target="_parent">Les cours collectifs</a></li>
+                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/courenfant'" (click)="closeMenu()" target="_parent">Club enfant</a></li>
+                <li class="liDrop"><a class="dropdown-item" [routerLink]="'/coursadult'" (click)="closeMenu()" target="_parent">Club adulte</a></li>
             </ul>
         </li>
         
-        <li><a class="aheader" [routerLink]="'/tarif'" (click)="closeMenu()">Tarifs</a></li>
-        <li><a class="aheader" [routerLink]="'/planning'" (click)="closeMenu()">Planning</a></li>
-        <li><a class="aheader" [routerLink]="'/bmiclac'" (click)="closeMenu()">Calculateur d'IMC</a></li>
-        <li><a class="aheader" [routerLink]="'/contact'" (click)="closeMenu()">Contact</a></li>
+        <li><a class="aheader" [routerLink]="'/tarif'" (click)="closeMenu()" target="_parent">Tarifs</a></li>
+        <li><a class="aheader" [routerLink]="'/equipe'" (click)="closeMenu()" target="_parent">Notre Equipe</a></li>
+        <li><a class="aheader" [routerLink]="'/planning'" (click)="closeMenu()" target="_parent">Planning</a></li>
+        <li><a class="aheader" [routerLink]="'/bmiclac'" (click)="closeMenu()" target="_parent">Calculateur d'IMC</a></li>
+        <li><a class="aheader" [routerLink]="'/contact'" (click)="closeMenu()" target="_parent">Contact</a></li>
     </ul>
 
- <!-- Toggle icon for mobile -->
- <div class="menu-toggle" (click)="toggleMenu()">
+  <!-- Toggle icon for mobile -->
+  <div class="menu-toggle" (click)="toggleMenu()">
     <span></span>
     <span></span>
     <span></span>
-</div>
+  </div>
 
   
 </header>

@@ -159,6 +159,9 @@
 
 
 
+
+
+
 /* Mobile-specific styles */
 @media (max-width: 768px) {
     .navbar {
@@ -178,16 +181,22 @@
     }
 
     .menu-toggle {
-        display: block;
+        display: block; /* Assure l'affichage en version mobile */
         cursor: pointer;
+        z-index: 2000; /* Assure que le menu toggle est au-dessus des autres éléments */
     }
 
     .menu-toggle span {
         display: block;
-        width: 25px;
-        height: 3px;
-        background-color: #fff;
-        margin: 5px;
+        width: 30px; /* Largeur de chaque ligne */
+        height: 3px; /* Épaisseur de chaque ligne */
+        background-color: #fff; /* Couleur des lignes */
+        margin: 5px 0; /* Espace entre chaque ligne */
         transition: 0.3s;
     }
+
+    /* Affiche le menu-toggle pour les mobiles */
+  .menu-toggle {
+    display: flex;
+  }
 }
